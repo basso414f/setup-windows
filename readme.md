@@ -83,3 +83,20 @@ New-Item -Path ~ -Name .config -Value ~\Dropbox\dotfiles\.config -ItemType Junct
 New-Item -Path ~ -Name .vscode -Value ~\Dropbox\dotfiles\.vscode -ItemType Junction
 New-Item -Path ~ -Name .mume -Value ~\Dropbox\dotfiles\.mume -ItemType Junction
 ```
+
+# AverMedia
+
+## GG553をセットアップする
+
+- 色々刺す
+- [AverMedia公式サイト](https://www.avermedia.co.jp/download/index.html)にアクセスし、GC553対応のキャプチャーソフトウェア、ユーザーズマニュアルなどをダウンロードする
+
+## PowerDirector 15 (4K対応)
+
+- [『Cyberlink PowerDirector 15 for AVerMedia』 取得、及び、ライセンスキーの登録方法について](http://q.avermedia.com/cyberlink-jp)にアクセス
+- PowerDirector（4K対応）をインストール
+- ライセンスは[CyberLink メンバーサイト](https://membership.cyberlink.com/prog/member/sign-in.do)を参照
+
+# OBS
+
+- Chocolateyでインストール
