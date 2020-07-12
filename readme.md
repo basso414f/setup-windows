@@ -100,3 +100,17 @@ New-Item -Path ~ -Name .mume -Value ~\Dropbox\dotfiles\.mume -ItemType Junction
 # OBS
 
 - Chocolateyでインストール
+
+
+# Splatoon系のツール
+
+- [SplashGo!](https://twitter.com/SplashGo0812)
+- [StreamingWidget](https://twitter.com/sisno_boomx/status/1281970294421245952?s=21)
+
+### 権利用の文言
+
+> ▽オーバーレイスクリプト配布: SplashGo!(スプゴー)様
+> https://twitter.com/SplashGo0812
+
+> ▽Splatoon2のストリーマー用ツール配布: sisno_boomx様
+> https://twitter.com/sisno_boomx
