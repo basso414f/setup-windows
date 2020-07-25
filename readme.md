@@ -50,16 +50,6 @@
   - C:\Program Files
   - C:\Program Files (x86)
 
-## Google IME
-
-- MS-IMEをカスタマイズする
-
-|     mode     | key |   command   |
-| ------------ | --- | ----------- |
-| 入力文字なし | F13 | IMEを有効化 |
-| 変換前入力中 | F13 | IMEを有効化 |
-| 直接入力     | F13 | IMEを無効化 |
-
 # Folder
 - [ ] 表示
   - [ ] ファイル名拡張子：オン
@@ -82,6 +72,7 @@ New-Item -Path ~ -Name .azure -Value ~\Dropbox\dotfiles\.azure -ItemType Junctio
 New-Item -Path ~ -Name .config -Value ~\Dropbox\dotfiles\.config -ItemType Junction
 New-Item -Path ~ -Name .vscode -Value ~\Dropbox\dotfiles\.vscode -ItemType Junction
 New-Item -Path ~ -Name .mume -Value ~\Dropbox\dotfiles\.mume -ItemType Junction
+Copy-Item "~\Dropbox\dotfiles\alt-ime-ahk\alt-ime-ahk.exe" "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\alt-ime-ahk.exe"
 ```
 
 # AverMedia
