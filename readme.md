@@ -1,4 +1,6 @@
-# setup
+# PC setup
+
+## 手動の作業
 
 - [ ] タスクバーを小さくする
 - [ ] タスクバーをすべてのディスプレイに表示する：オフ
@@ -9,21 +11,20 @@
   - [ ] コンピュータをスリープ状態にする：適用しない
   - [ ] カバーを閉じたときの動作：何もしない
 
-# install
+## Installする系
 
 - [ ] スマホ同期アプリ？
 
-
 - [ ] install chocolatey
-  - https://chocolatey.org/install
+  - [https://chocolatey.org/install](https://chocolatey.org/install)
   - `choco install .\package.config -y`
   - `choco install .\package.private.config -y`
 
 - [ ] google japanese input
 - [ ] python3はすでにWindowsにInstallされている
-- [ ] ttclock
+- [ ] TTClock
 
-## ttclock
+### TTClock 詳細設定
 
 - デザイン-1
   - 描画エフェクト
@@ -40,7 +41,7 @@
   - マウスの左ボタンで時計をクリックしたときに以下の動作を行う
     - シングルクリック：カレンダーを表示
 
-## Everything
+### Everything 詳細設定
 
 - [検索データ]-[除外]
   - 隠しファイルとフォルダを除外する：オン
@@ -50,19 +51,20 @@
   - C:\Program Files
   - C:\Program Files (x86)
 
-# Folder
+## Folder の設定
+
 - [ ] 表示
   - [ ] ファイル名拡張子：オン
   - [ ] 隠しファイル：オン
 
-# pip
+## pipのインストール
 
 ```posh
 setx PATH "$env:Path;%USERPROFILE%\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\Scripts"
 pip install --upgrade  pip
 ```
 
-# dotfiles
+## dotfilesの作成
 
 ```posh
 New-Item -Path ~ -Name .gitconfig -Value ~\Dropbox\dotfiles\.gitconfig -ItemType HardLink
@@ -75,25 +77,24 @@ New-Item -Path ~ -Name .mume -Value ~\Dropbox\dotfiles\.mume -ItemType Junction
 Copy-Item "~\Dropbox\dotfiles\alt-ime-ahk\alt-ime-ahk.exe" "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\alt-ime-ahk.exe"
 ```
 
-# AverMedia
+## AverMedia
 
-## GG553をセットアップする
+### GG553をセットアップする
 
 - 色々刺す
 - [AverMedia公式サイト](https://www.avermedia.co.jp/download/index.html)にアクセスし、GC553対応のキャプチャーソフトウェア、ユーザーズマニュアルなどをダウンロードする
 
-## PowerDirector 15 (4K対応)
+### PowerDirector 15 (4K対応)
 
 - [『Cyberlink PowerDirector 15 for AVerMedia』 取得、及び、ライセンスキーの登録方法について](http://q.avermedia.com/cyberlink-jp)にアクセス
 - PowerDirector（4K対応）をインストール
 - ライセンスは[CyberLink メンバーサイト](https://membership.cyberlink.com/prog/member/sign-in.do)を参照
 
-# OBS
+## OBS
 
 - Chocolateyでインストール
 
-
-# Splatoon系のツール
+## Splatoon系のツール
 
 - [SplashGo!](https://twitter.com/SplashGo0812)
 - [StreamingWidget](https://twitter.com/sisno_boomx/status/1281970294421245952?s=21)
@@ -101,7 +102,9 @@ Copy-Item "~\Dropbox\dotfiles\alt-ime-ahk\alt-ime-ahk.exe" "~\AppData\Roaming\Mi
 ### 権利用の文言
 
 > ▽オーバーレイスクリプト配布: SplashGo!(スプゴー)様
-> https://twitter.com/SplashGo0812
+> [https://twitter.com/SplashGo0812](https://twitter.com/SplashGo0812)
+
+---
 
 > ▽Splatoon2のストリーマー用ツール配布: sisno_boomx様
-> https://twitter.com/sisno_boomx
+> [https://twitter.com/sisno_boomx](https://twitter.com/sisno_boomx)
