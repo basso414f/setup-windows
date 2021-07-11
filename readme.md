@@ -11,6 +11,21 @@
   - [ ] コンピュータをスリープ状態にする：適用しない
   - [ ] カバーを閉じたときの動作：何もしない
 
+## NTP時刻同期の間隔変更
+
+管理者権限でPowerShellを開き、以下を実行する
+
+```powershell
+# 時刻同期の既定値（1週間）を1日に変更
+# cf: https://tm.root-n.com/misc:windowsxp_time_poll_interval
+
+# 確認用 ※値は10進数
+Get-ItemPropertyValue HKLM:\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient\ -Name SpecialPollInterval
+
+# 設定用（ここでは 86400 = 60×60×24に変更）
+Set-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient\ -Name SpecialPollInterval -Value 86400
+```
+
 ## Installする系
 
 - [ ] スマホ同期アプリ？
@@ -59,14 +74,14 @@
 
 ## pipのインストール
 
-```posh
+```powershell
 setx PATH "$env:Path;%USERPROFILE%\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\Scripts"
 pip install --upgrade  pip
 ```
 
 ## dotfilesの作成
 
-```posh
+```powershell
 New-Item -Path ~ -Name .gitconfig -Value ~\Dropbox\dotfiles\.gitconfig -ItemType HardLink
 New-Item -Path ~ -Name .ssh -Value ~\Dropbox\dotfiles\.ssh -ItemType Junction
 New-Item -Path ~ -Name .aws -Value ~\Dropbox\dotfiles\.aws -ItemType Junction
